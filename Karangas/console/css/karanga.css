@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root{
+    --az-petroleo: #0A202D;
+    --cinza-escuro: #333;
+    --branco: #fff;
+    --branco-gelo: #f2f2f2;
+    --preto: #000;
+    --topactive: #04AA6D;
+    --encardido: #ddd;
+    --vermelho: #dc3545;
+    --verm_hover: #c82333;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Wellfleet", monospace;
+  }
+
+.topnav-logo {
+    display: flex;
+    justify-content: center;
+    background-color: #0A202D;
+    box-shadow: 0 4px 6px rgba(218, 80, 80, 0.1); /* Adiciona sombra embaixo */
+    height: 115px;
+}
+
+  .navbar {
+    display: block;
+    background-color: #103042;
+  }
+
+  .topnav {
+    background-color: #d68b49;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .topnav a {
+    transition: transform 0.1s ease; /* Adiciona uma transição suave */
+    float: left;
+    display: flex;
+    align-items: center;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 46px;
+    text-decoration: none;
+  }
+
+  .active {
+    background-color: #E19757;
+  }
+
+  .options {
+    float: left;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    color: #f2f2f2;
+    padding: 4px 20px;
+    text-decoration: none;
+  }
+
+  .icone-config {
+    background-color: #103042;
+    color: white;
+    height: 40px;
+    width: 40px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-karanga {
+    height: 100px;
+    width: 100px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+  }
+  
+  .logo-karanga:hover {
+      transform: scale(1.1); /* Aumenta a imagem em 20% */
+  }
+
+  .topnav a .botao-sair{
+    text-align: center;
+    padding: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #fca65b;
+    color: white;
+    transform: scale(1.1); /* Aumenta a imagem em 20% */
+  }
+
+  .botao-sair-direita a:hover {
+    background-color: #eb210b;
+    color: white;
+  }
+
+  /* Estilo para o conteúdo */
+  .conteudo {
+    padding: 20px;
+  }
+
+  .conteudo h2 {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    color: #0A202D;
+}
+
+.botao-sair-direita {
+  display: flex;
+  margin-left: auto;
+}
+
+  /* Estilo para o botão sair */
+  .botao-sair {
+    background-color: #f44336; /* Vermelho */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 1px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .botao-sair:hover {
+    background-color: #d32f2f; /* Vermelho mais escuro no hover */
+  }
+
+  form .form-group {
+    margin-bottom: 15px;
+}
+
+form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: var(--topactive);
+    border: none;
+    color: var(--branco);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #039e63;
+}
+
+/* Media query para telas menores */
+@media screen and (max-width: 715px) {
+  .topnav {
+    display: block;/* Altera a direção do flex para empilhamento vertical */
+  }
+
+  .topnav a {
+    float: none;
+    display: block; /* Exibe os links como blocos para empilhamento vertical */
+    text-align: center; /* Alinha o texto à esquerda */
+  }
+
+  .botao-sair {
+    width: 100%;
+  }
+
+  .botao-sair-direita {
+    margin: auto; /* Mantém o botão de sair à direita */
+    justify-content: center;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a .options{
+    display: flex;
+    align-content: center;
+  }
+
+  .options {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 14px 0; /* Ajusta o padding para responsividade */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 14px 0px;
+    }
+  
+    .icone-config {
+      height: 20px;
+      width: 20px;
+    }
+}
